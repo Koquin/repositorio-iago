@@ -18,7 +18,7 @@ export interface Project {
   sections?: ImageSection[];
 }
 
-const BASE_PATH = import.meta.env.BASE_URL || '/';
+const BASE_PATH = '/repositorio-iago/';
 
 export const projects: Project[] = [
   {
