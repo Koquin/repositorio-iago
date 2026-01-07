@@ -6,7 +6,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/repositorio-iago">
       <div className="app">
         <NavBar />
         <Routes>
