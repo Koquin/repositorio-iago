@@ -1,0 +1,130 @@
+.project-details {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+  animation: fadeIn 0.5s ease;
+}
+
+.project-details.empty {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #999;
+  font-size: 1.2rem;
+}
+
+.project-details-header {
+  margin-bottom: 2rem;
+}
+
+.project-details-header h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.project-description {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.project-images-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.project-image-container {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.project-image-container:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+}
+
+.image-description {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.8rem 1rem;
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.project-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+.project-section {
+  margin-bottom: 4rem;
+}
+
+.section-divider {
+  border-top: 3px solid #667eea;
+  padding-top: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #667eea;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .project-images-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .project-images-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .project-details-header h2 {
+    font-size: 2rem;
+  }
+
+  .project-description {
+    font-size: 1rem;
+  }
+}
