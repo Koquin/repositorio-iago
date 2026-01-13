@@ -73,5 +73,17 @@ export const projects: Project[] = [
       { src: `${BASE_PATH}images/valdeci/SistemaValdeciTelaProdutosDaDivida.jpeg`, description: 'Tela de produtos da divida selecionada' },
       { src: `${BASE_PATH}images/valdeci/SistemaValdeciTelaAssinatura.jpeg`, description: 'Tela de para fazer a assinatura, provando que o cliente fez a divida' },
     ]
+  },
+  {
+    id: 'visagio-pro',
+    title: 'Visagio Pro',
+    logo: `${BASE_PATH}logos/visagio-pro.png`,
+    description: 'Plataforma de análise facial para melhoria da imagem pessoal.',
+    images: [
+      { src: `${BASE_PATH}images/visagio-pro/tela_inicial.png`, description: 'Tela inicial da plataforma' },
+      { src: `${BASE_PATH}images/visagio-pro/tela_dashboard.png`, description: 'Dashboard com análises faciais e plano atual' },
+      { src: `${BASE_PATH}images/visagio-pro/tela_quiz.png`, description: 'Sistema de quiz interativo' },
+      { src: `${BASE_PATH}images/visagio-pro/tela_analise.png`, description: 'Tela de resultados da análise facial' },
+    ]
   }
 ];
